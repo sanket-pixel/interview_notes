@@ -85,6 +85,3 @@ If a constructor throws an exception, the object is considered "never fully cons
 **Q13. What is a dangling pointer, and why is `nullptr` not a complete fix?**
 A dangling pointer is a pointer that points to memory that has already been freed or has gone out of scope. Setting a pointer to `nullptr` right after calling `delete` prevents *that specific pointer* from being a dangling pointer. However, if there are *other* pointers in your program pointing to that exact same memory address, those other pointers are now dangling, and setting the original pointer to `nullptr` does nothing to protect them.
 
----
-
-**Would you like to move on to the pure coding practice questions for Memory Management, or would you prefer to switch to the next major subfolder/topic in your repository?**
